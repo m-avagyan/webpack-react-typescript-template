@@ -1,0 +1,5 @@
+{
+    "home": {
+        "description": "Modèle pour créer une application react en utilisant webpack et typescript."
+    }
+}
