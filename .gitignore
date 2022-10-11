@@ -1,0 +1,17 @@
+/node_modules
+/build
+/coverage
+
+.eslintcache
+.firebase/
+
+.DS_Store
+.DS_STORE
+
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+
+logs
+*.log
