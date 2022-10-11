@@ -1,0 +1,81 @@
+{
+    "name": "webpack-react-typescript-template",
+    "version": "1.0.0",
+    "description": "Template for create react app using webpack and typescript",
+    "keywords": [
+        "react",
+        "typescript",
+        "webpack",
+        "jest",
+        "react-testing-library",
+        "eslint",
+        "prettier",
+        "husky",
+        "commitlint"
+    ],
+    "author": "Martik Avagyan <martikavagyan1@gmail.com> (https://github.com/m-avagyan)",
+    "homepage": "https://github.com/m-avagyan/webpack-react-typescript-template#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/m-avagyan/webpack-react-typescript-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/m-avagyan/webpack-react-typescript-template/issues"
+    },
+    "scripts": {
+        "start": "webpack serve --progress --mode development",
+        "clean": "rm -rf ./build",
+        "build": "yarn clean && webpack --progress --mode production",
+        "lint": "yarn eslint src --ext .js,.ts,.tsx --ignore-pattern '!.*.js' --no-error-on-unmatched-pattern"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.1",
+        "@babel/preset-env": "^7.19.1",
+        "@babel/preset-react": "^7.18.6",
+        "@babel/preset-typescript": "^7.18.6",
+        "@commitlint/cli": "^17.1.1",
+        "@commitlint/config-conventional": "^17.1.0",
+        "@svgr/webpack": "^6.3.1",
+        "@types/react": "^17.0.1",
+        "@types/react-dom": "^17.0.1",
+        "@typescript-eslint/eslint-plugin": "4.0.1",
+        "@typescript-eslint/parser": "4.0.1",
+        "babel-loader": "^8.2.5",
+        "css-loader": "^6.7.1",
+        "eslint": "^7.26.0",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.3.0",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.8.2",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    },
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --quiet --cache --fix"
+        ],
+        "*.{json,js,ts,jsx,tsx,html}": [
+            "prettier --write"
+        ]
+    },
+    "license": "MIT",
+    "private": true,
+    "engines": {
+        "node": ">=8.0.0",
+        "npm": ">=6.0.0",
+        "yarn": ">=1.0.0"
+    }
+}
