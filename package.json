@@ -8,8 +8,6 @@
         "webpack",
         "react-router",
         "i18next",
-        "jest",
-        "react-testing-library",
         "eslint",
         "prettier",
         "husky",
