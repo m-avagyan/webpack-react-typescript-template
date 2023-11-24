@@ -23,12 +23,13 @@ module.exports = {
     rules: {
         'no-console': ['error', { allow: ['info', 'groupCollapsed', 'groupEnd', 'error'] }],
         'prettier/prettier': ['error', { endOfLine: 'auto' }],
-        'react/react-in-jsx-scope': 0,
+        'react/react-in-jsx-scope': ['off'],
         'no-use-before-define': ['error', 'nofunc'],
         '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,
+        '@typescript-eslint/no-non-null-assertion': 0,
     },
     settings: {
         react: {

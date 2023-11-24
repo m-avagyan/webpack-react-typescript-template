@@ -4,6 +4,7 @@ import Paths from './constants/path';
 
 const Home = lazy(() => import(/* webpackChunkName: "pages/home" */ './pages/Home'));
 const TestPage = lazy(() => import(/* webpackChunkName: "pages/test-page" */ './pages/TestPage'));
+const NotFound = lazy(() => import(/* webpackChunkName: "pages/not-found" */ './pages/NotFound'));
 
 type TRoute = {
     name: string;
@@ -23,6 +24,12 @@ const routes = [
         name: 'test-page',
         path: Paths.TEST_PAGE,
         Component: TestPage,
+        Fallback: null,
+    },
+    {
+        name: 'not-found',
+        path: Paths.NOT_FOUND,
+        Component: NotFound,
         Fallback: null,
     },
 ] as TRoute[];

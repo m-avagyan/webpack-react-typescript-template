@@ -1,17 +1,22 @@
 import React, { lazy, Suspense } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Loader from './components/loader/Loader';
 import './i18next';
 
+const root = document.getElementById('root');
+
 const App = lazy(() => import(/* webpackChunkName: "app-context" */ './App'));
 
-ReactDOM.render(
-    <Router>
-        <Suspense fallback={<Loader />}>
-            <App />
-        </Suspense>
-    </Router>,
-    document.getElementById('root')
-);
+if (root) {
+    const app = createRoot(root);
+
+    app.render(
+        <Router>
+            <Suspense fallback={<Loader />}>
+                <App />
+            </Suspense>
+        </Router>
+    );
+}
