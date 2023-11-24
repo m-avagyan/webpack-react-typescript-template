@@ -2,10 +2,6 @@
 
 Modern template to start creating react app using webpack and typescript 🚀
 
-##
-
-<img src="https://i.morioh.com/bffbbd66ea.png" alt="webpack-react-typescript" />
-
 ## Getting Started
 
 Installing
