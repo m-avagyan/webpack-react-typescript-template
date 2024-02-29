@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Route, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
 
-import Loader from 'components/loader';
-
+import Loader from './components/loader';
 import Paths from './constants/path';
 import routes from './routes';
 
