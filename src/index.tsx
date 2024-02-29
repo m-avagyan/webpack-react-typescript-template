@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Loader from './components/loader/Loader';
+import Loader from './components/loader';
 import './i18next';
 
 const root = document.getElementById('root');

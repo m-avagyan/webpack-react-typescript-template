@@ -21,6 +21,12 @@ Build Project
 -   `yarn clean` - clean the `dist/` directory
 -   `yarn build` - we can see the output in `dist/` directory
 
+Run Unit Tests
+
+-   `yarn test` - run all test cases
+-   `yarn test:watch` - run all test cases in watch mode
+-   `yarn test:coverage` - run all test cases and collect coverage for each tested files
+
 Analyze
 
 -   `yarn analyze` - build project to `/dist` and analyze your bundle size in [localhost:3006](http://localhost:3006)
