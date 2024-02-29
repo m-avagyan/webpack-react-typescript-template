@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Route, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
 
+import Loader from 'components/loader';
+
 import Paths from './constants/path';
 import routes from './routes';
 
@@ -18,7 +20,7 @@ function App() {
             <Switch>
                 {routes.map(({ name, path, Component }, index) => (
                     <Route key={name + index} path={path} exact>
-                        <Suspense fallback={null}>
+                        <Suspense fallback={<Loader />}>
                             <Component />
                         </Suspense>
                     </Route>
