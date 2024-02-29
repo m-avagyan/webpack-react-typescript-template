@@ -9142,6 +9142,11 @@ typescript@^4.9.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
+ublob@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ublob/-/ublob-1.0.1.tgz#58db33ac2e2b57a82a455ad4f7e609170acd9e53"
+  integrity sha512-YXb6LobBC3qHqe/KHYJt715ZwKvn99oAr2HNjhWtdVWduahdcsvy2FgZxFZFI92QTKPhYOG8IOTIgXXbzi4WUA==
+
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
