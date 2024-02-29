@@ -7,7 +7,9 @@ describe('Get file type tests.', () => {
             const result = getFileType(1);
 
             expect(result).toThrowError('The parameter must be a blob string.');
-        } catch {}
+        } catch (e) {
+            console.info(e);
+        }
     });
 
     it('Should throw exception error if file type not supported.', () => {
@@ -15,7 +17,9 @@ describe('Get file type tests.', () => {
             const result = getFileType('unsupported-file');
 
             expect(result).toThrowError('The file type is not supported.');
-        } catch {}
+        } catch (e) {
+            console.info(e);
+        }
     });
 
     it('Should return file type.', () => {

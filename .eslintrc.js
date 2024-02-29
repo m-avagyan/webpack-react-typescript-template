@@ -27,6 +27,7 @@ module.exports = {
         'no-use-before-define': ['error', 'nofunc'],
         '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
+        '@typescript-eslint/ban-ts-comment': 0,
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-non-null-assertion': 0,
