@@ -9,6 +9,11 @@ import Loader from './components/loader';
 import Paths from './constants/path';
 import routes from './routes';
 
+const StyledWrapper = styled.div`
+    width: 100%;
+    padding: 40px;
+`;
+
 const StyledDescription = styled.div`
     text-align: center;
     padding: 40px;
@@ -35,12 +40,22 @@ const StyledLink = styled(Link)`
     font-weight: bold;
 `;
 
+const StyledUrl = styled.a`
+    color: green;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+`;
+
 function App() {
     const { t } = useTranslation();
 
     return (
-        <div>
+        <StyledWrapper>
             <StyledDescription>{t('home.description')}</StyledDescription>
+            <StyledUrl href="https://martikavagyan.com" target="_blank" aria-label="See My Website Here!">
+                See My Website Here!
+            </StyledUrl>
 
             <StyledLink to={Paths.TEST_PAGE}>Test Page</StyledLink>
 
@@ -55,7 +70,7 @@ function App() {
                     ))}
                 </Switch>
             </StyledContainer>
-        </div>
+        </StyledWrapper>
     );
 }
 
