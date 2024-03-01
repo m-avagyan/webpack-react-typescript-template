@@ -1,13 +1,40 @@
-/* DEFINE YOUR APP MAIN CONFIGS HERE */
+const nodeEnv = process.env.NODE_ENV;
+const isDevSite = window.location.hostname.split('.')[0] === 'dev';
+
+const isLocal = !nodeEnv;
+const isDevelopment = nodeEnv === 'development' || isDevSite;
+const isProduction = nodeEnv === 'production' && !isDevSite;
+
+const getBaseUrl = () => {
+    if (isLocal) {
+        return 'https://localhost:3000';
+    }
+
+    if (isDevelopment) {
+        return 'https://dev.<domain>.com';
+    }
+
+    return 'https://<domain>.com';
+};
+
+const getApiUrl = () => {
+    if (isLocal) {
+        return 'http://localhost:8000';
+    }
+
+    if (isDevelopment) {
+        return 'https://api.dev.<domain>.com';
+    }
+
+    return 'https://api.<domain>.com';
+};
+
 const Configs = {
-    isLocalMode: process.env.NODE_ENV === 'local',
-    isLocalHttpsMode: process.env.NODE_ENV === 'local:https',
-    isDevelopmentMode: process.env.NODE_ENV === 'development',
-    isProductionMode: process.env.NODE_ENV === 'production',
-    baseUrl: 'https://localhost:3000',
-    apiUrl: 'https://api.<domain>',
-    defaultLocale: 'en',
-    supportedLocales: ['en'],
+    IS_LOCAL: isLocal,
+    IS_DEVELOPMENT: isDevelopment,
+    IS_PRODUCTION: isProduction,
+    BASE_URL: getBaseUrl(),
+    API_URL: getApiUrl(),
 };
 
 Object.freeze(Configs);
