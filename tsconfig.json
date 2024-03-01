@@ -4,7 +4,7 @@
         "outDir": "dist",
         "target": "es5",
         "module": "esnext",
-        "types": ["node"],
+        "types": ["node", "jest"],
         "lib": ["dom", "dom.iterable", "esnext"],
         "jsx": "react",
         "moduleResolution": "node",
