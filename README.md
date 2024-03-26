@@ -43,6 +43,7 @@ Codebase
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [Webpack](https://webpack.js.org/)
 -   [Styled Components](https://styled-components.com/)
+-   [i18next](https://react.i18next.com/)
 
 ## Contributing
 
